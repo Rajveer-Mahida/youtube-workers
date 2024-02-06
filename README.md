@@ -1,7 +1,11 @@
 ## Build your own Cloudflare Workers For Getting Youtube Live M3u8 Url.
 <br>
+ This project provides a simple Cloudflare Worker script for redirecting users to live streams on YouTube based on different types of identifiers such as channel names, custom handles, or video IDs. It's designed for educational purposes only and should not be used in production environments.
 
 Method to get YouTube channel live URL with **Workers Script.**
+
+> [!IMPORTANT]  
+> The **Link** only works if the **YT** channel is Live.
 
 <br>
 
@@ -37,8 +41,6 @@ If you're new to **CF Workers**, visit and get started here: **[workers.cloudfla
 
 You can test the Workers script here **[Workers Playground](https://workers.cloudflare.com/playground)**
 
-<br>
-
 Don't forget to rename your **workers** > `yourCustomName.yourName.workers.dev`, it's up to you to make it an attractive _custom name_.
 
 To rename your workers: 
@@ -46,6 +48,8 @@ To rename your workers:
 Your workers > `Manage application` > `Rename service` > _Choose your new service name_ > `Continue`.
 
 <br>
+
+<hr>
 
 After deploying the new workers script, activate the workers by appending a **.m3u8** link to the end of the URL.
 
@@ -77,8 +81,6 @@ https://workers.name.workers.dev/@handle-name.m3u8
 <br>
 <br>
 
-> [!IMPORTANT]  
-> The **Link** only works if the **YT** channel is Live.
 
 <br>
 <br>
